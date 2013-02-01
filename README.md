@@ -15,8 +15,8 @@ Compile DoxygenApp as follows:
 
 **Dependencies**
 
-- Doxygen           (http://www.stack.nl/~dimitri/doxygen)
-- Dot Utility    (http://www.graphviz.org)
+- Doxygen       (http://www.stack.nl/~dimitri/doxygen)
+- Dot Utility   (http://www.graphviz.org)
 
 **Note**
 
