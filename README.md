@@ -18,6 +18,12 @@ Compile DoxygenApp as follows:
 - Doxygen        (http://www.stack.nl/~dimitri/doxygen)
 - Dot Utility    (http://www.graphviz.org)
 
+**Note**
+
+The Current version of this Application generates HTML output ONLY.
+
+Also, to ensure minimum user intervention, this Application automatically sets certain parameters.
+
 
 **Comments/Feedback**
 
