@@ -18,7 +18,7 @@
  * along with DoxygenApp. If not, see <http://www.gnu.org/licenses/>.
  *
  * Compile it as follows:
- * gcc DoxygenApp.c -ansi -Wall -pedantic -g -o DoxygenApp
+ * gcc DoxygenApp.c -ansi -Wall -pedantic -o DoxygenApp
  *
  */
 
