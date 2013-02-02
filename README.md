@@ -13,12 +13,12 @@ Compile DoxygenApp as follows:
 *gcc -ansi -Wall -pedantic DoxygenApp.c -o DoxygenApp*
 
 
-**Dependencies**
+**Dependencies:**
 
 - Doxygen       (http://www.stack.nl/~dimitri/doxygen)
 - Dot Utility   (http://www.graphviz.org)
 
-**Note**
+**Note:**
 
 - The Current version of this Application generates HTML output ONLY.
 - To ensure minimum user intervention, this Application automatically sets certain parameters.
