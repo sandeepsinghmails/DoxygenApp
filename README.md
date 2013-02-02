@@ -3,7 +3,7 @@ DoxygenApp
 
 This Application provides a Fast and Easy Interface To Generate Source Code Documentation using Doxygen.
 
-With the Minimum Input from the User (only 3 parametrs), it can easily Generate the Doxygen Documentation (with Call Graphs).
+With the Minimum Input from the User (only 3 parameters), it can easily Generate the Doxygen Documentation (with Call Graphs).
 
 
 **How To Compile DoxygenApp**
