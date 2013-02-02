@@ -63,7 +63,7 @@ Compile DoxygenApp as follows:
 ![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_7.jpeg)
 
 
-**DoxygenApp opens the Main Page in Firefox Web Browser:**
+**DoxygenApp opens the Main Page of Generated Documentation in Firefox Web Browser:**
 
 ![Main Page](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_8.jpeg)
 
