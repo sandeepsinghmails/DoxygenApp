@@ -58,7 +58,7 @@ Compile DoxygenApp as follows:
 ![Cust O/P Dir Path](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_6.jpeg)
 
 
-**Doxygen Source Code Documentation Generation Starts:**
+**Doxygen Source Code Documentation Generation:**
 
 ![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_7.jpeg)
 
