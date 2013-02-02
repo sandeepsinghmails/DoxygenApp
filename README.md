@@ -21,7 +21,7 @@ Compile DoxygenApp as follows:
 **Note:**
 
 - The Current version of this Application generates HTML output ONLY.
-- To ensure minimum user intervention, this Application automatically sets certain parameters.
+- To ensure minimum user intervention, this Application automatically sets most of the desired parameters.
 - The Current version of DoxygenApp has been tested on GNU/Linux Platform only
 
 **Screenshots:**
