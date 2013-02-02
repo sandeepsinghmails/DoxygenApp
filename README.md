@@ -26,7 +26,7 @@ Compile DoxygenApp as follows:
 
 **Screenshots:**
 
-Create a Project:
+**Create a Project:**
 
 ![Create a Project](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_1.jpeg)
 
