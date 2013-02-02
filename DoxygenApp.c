@@ -327,7 +327,7 @@ int main()
 	#endif
     
 	/* Open Doxygen Generated Documentation */
-	strncpy(path_buffer+strlen(path_buffer), "/html/files.html\0", sizeof("/html/files.html\0"));
+	strncpy(path_buffer+strlen(path_buffer), "/html/index.html\0", sizeof("/html/index.html\0"));
 	sprintf (cmd_buffer, "firefox \"%s\"", path_buffer); 
 	
 	#ifdef DEBUG_FLAG
