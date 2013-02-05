@@ -46,14 +46,14 @@ Compile DoxygenApp as follows:
 ![I/P Dir Path](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_4.jpeg)
 
 
-**Step-4: (Optional)**
-
-**Use the Default Path for Output Directory: [Just Press Enter]**
+**Step-4: Use the Default Path for Output Directory: [Just Press Enter]**
 
 ![Def O/P Dir Path](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_5.jpeg)
 
 
-**Or Use your Custom Path for Output Directory: [Enter your Custom Path]**
+**Or (Optional)**
+
+**Use your Custom Path for Output Directory: [Enter your Custom Path]**
 
 ![Cust O/P Dir Path](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_6.jpeg)
 
