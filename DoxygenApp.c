@@ -197,12 +197,12 @@ int main()
 			"LATEX_HIDE_INDICES     = NO\n"
 			"LATEX_SOURCE_CODE      = NO\n"
 			"LATEX_BIB_STYLE        = plain\n"
-			"GENERATE_RTF           = NO\n");
+			"GENERATE_RTF           = YES\n");
 
 	fprintf (fptr,
 			"RTF_OUTPUT             = rtf\n"
 			"COMPACT_RTF            = NO\n"
-			"RTF_HYPERLINKS         = NO\n"
+			"RTF_HYPERLINKS         = YES\n"
 			"GENERATE_MAN           = NO\n"
 			"MAN_OUTPUT             = man\n"
 			"MAN_EXTENSION          = .3\n"
