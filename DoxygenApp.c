@@ -336,9 +336,10 @@ int main()
 	printf("\033[31m");
 	printf ("\nThanks for Using DoxygenApp !\n\n");
 	printf("\033[0m");
-	printf ("\nYour HTML Documentation is here:\n\033[31m%s/html/index.html\n\033[0m", 
+	printf ("\nYour HTML Documentation is here:\n\033[31m%s\n\033[0m", 
 																	path_buffer);
-	printf ("\nYour RTF Documentation is here:\n\033[31m%s/rtf/refman.rtf\n\n\033[0m", 
+	memset (path_buffer+strlen(path_buffer)-15, '\0', 15);														
+	printf ("\nYour RTF Documentation is here:\n\033[31m%srtf/refman.rtf\n\n\033[0m", 
 																	path_buffer);
 	
 	#ifdef DEBUG_FLAG
