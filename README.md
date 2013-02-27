@@ -20,7 +20,7 @@ Compile DoxygenApp as follows:
 
 **Note:**
 
-- The Current version of this Application generates HTML output ONLY.
+- The Current version of this Application generates HTML and RTF versions of Doxygen Documentation.
 - To ensure minimum user intervention, this Application automatically sets most of the desired parameters.
 - The Current version of DoxygenApp has been tested on GNU/Linux Platform only
 
