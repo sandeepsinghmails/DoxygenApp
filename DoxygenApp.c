@@ -185,7 +185,7 @@ int main()
 	fprintf (fptr,
 			"SEARCHENGINE           = YES\n"
 			"SERVER_BASED_SEARCH    = NO\n"
-			"GENERATE_LATEX         = NO\n"
+			"GENERATE_LATEX         = YES\n"
 			"LATEX_OUTPUT           = latex\n"
 			"LATEX_CMD_NAME         = latex\n"
 			"MAKEINDEX_CMD_NAME     = makeindex\n"
@@ -332,15 +332,6 @@ int main()
 	/* Open Doxygen Generated Documentation */
 	strncpy(path_buffer+strlen(path_buffer), "/html/index.html\0", sizeof("/html/index.html\0"));
 	sprintf (cmd_buffer, "firefox \"%s\"", path_buffer); 
-
-	printf("\033[31m");
-	printf ("\nThanks for Using DoxygenApp !\n\n");
-	printf("\033[0m");
-	printf ("\nYour HTML Documentation is here:\n\033[31m%s\n\033[0m", 
-																	path_buffer);
-	memset (path_buffer+strlen(path_buffer)-15, '\0', 15);														
-	printf ("\nYour RTF Documentation is here:\n\033[31m%srtf/refman.rtf\n\n\033[0m", 
-																	path_buffer);
 	
 	#ifdef DEBUG_FLAG
 	printf ("\nTrace: Command Buffer:: %s\n\n", cmd_buffer);
@@ -350,6 +341,44 @@ int main()
 	{
 		ERROR_TRACE
 	}
+
+	/* Generate PDF Documentation */
+	
+	memset (path_buffer+strlen(path_buffer)-15, '\0', 15);		
+	memset (cmd_buffer, '\0', sizeof(cmd_buffer));
+	/* Enter the Directory containing the LaTeX File */
+	sprintf (cmd_buffer, "mv %slatex/* .", path_buffer); 
+	system(cmd_buffer);
+
+	system ("make all");
+
+	sprintf (cmd_buffer, "mkdir  %s/pdf", path_buffer); 
+	system (cmd_buffer);
+	
+	sprintf (cmd_buffer, "mv refman.pdf  %s/pdf/", path_buffer); 
+	system(cmd_buffer);
+	
+	system("make clean");	
+	system("rm -rf Makefile *.md5 *.sty *.pdf *.tex");	
+
+	sprintf (cmd_buffer, "rm -rf %slatex/* .", path_buffer); 
+	system(cmd_buffer);
+
+
+	/* GoodBye Message - with Useful Info */
+	printf("\033[31m");
+	printf ("\nThanks for Using DoxygenApp !\n\n");
+	printf("\033[0m");
+	/* HTML Documentation */
+	printf ("\nYour HTML Documentation is here:\n\033[31m%shtml/index.html\n\033[0m", 
+																	path_buffer);
+	/* RTF Documentation */
+	printf ("\nYour RTF Documentation is here:\n\033[31m%srtf/refman.rtf\n\n\033[0m", 
+																	path_buffer);
+	/* PDF Documentation */
+	printf ("\nYour PDF Documentation is here:\n\033[31m%spdf/refman.pdf\n\n\033[0m", 
+																	path_buffer);
+	
 
 
 	return 0;
