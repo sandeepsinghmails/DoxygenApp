@@ -319,10 +319,10 @@ int main()
 
 	fclose (fptr);
 
-	printf ("\nGenerate Doxygen Documentation\n\n");
+	printf ("\nGenerating Doxygen Documentation\n\n");
 	system ("doxygen 'ConfigFile'"); 
 
-	printf ("\n\nSource Code Generation Completed Successfully !\n\n");
+	printf ("\n\nSource Code Documentation Generation Completed Successfully !\n\n");
 	system ("rm -rf 'ConfigFile'");
 	
 	#ifdef DEBUG_FLAG
