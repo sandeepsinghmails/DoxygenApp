@@ -63,7 +63,7 @@ Compile DoxygenApp as follows:
 ![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_7.jpeg)
 
 
-**DoxygenApp prints the paths for Doxygen Generated HTML and RTF Documentation:**
+**On successful completion, DoxygenApp prints the paths for Doxygen Generated HTML and RTF Documentation:**
 
 ![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_9.jpeg)
 
