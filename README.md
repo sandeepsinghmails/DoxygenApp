@@ -63,6 +63,10 @@ Compile DoxygenApp as follows:
 ![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_7.jpeg)
 
 
+**DoxygenApp prints the paths for Doxygen Generated HTML and RTF Documentation:**
+
+![Doc Generation](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_9.jpeg)
+
 **DoxygenApp opens the Main Page of Generated Documentation in Firefox Web Browser:**
 
 ![Main Page](https://raw.github.com/sandeepsinghmails/DoxygenApp/master/Images/DoxygenApp_Sample_Usage_8.jpeg)
