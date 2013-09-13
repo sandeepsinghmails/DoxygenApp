@@ -352,10 +352,10 @@ int main()
 
 	system ("make all");
 
-	sprintf (cmd_buffer, "mkdir -p %spdf", path_buffer); 
+	sprintf (cmd_buffer, "mkdir -p '%spdf'", path_buffer); 
 	system (cmd_buffer);
 	
-	sprintf (cmd_buffer, "mv refman.pdf  %spdf/", path_buffer); 
+	sprintf (cmd_buffer, "mv refman.pdf  '%spdf/'", path_buffer); 
 	system(cmd_buffer);
 	
 	system("make clean");	
