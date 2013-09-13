@@ -197,7 +197,7 @@ int main()
 			"LATEX_HIDE_INDICES     = NO\n"
 			"LATEX_SOURCE_CODE      = NO\n"
 			"LATEX_BIB_STYLE        = plain\n"
-			"GENERATE_RTF           = YES\n");
+			"GENERATE_RTF           = NO\n");
 
 	fprintf (fptr,
 			"RTF_OUTPUT             = rtf\n"
@@ -347,15 +347,15 @@ int main()
 	memset (path_buffer+strlen(path_buffer)-15, '\0', 15);		
 	memset (cmd_buffer, '\0', sizeof(cmd_buffer));
 	/* Enter the Directory containing the LaTeX File */
-	sprintf (cmd_buffer, "mv %slatex/* .", path_buffer); 
+	sprintf (cmd_buffer, "mv \"%slatex/\"* .", path_buffer); 
 	system(cmd_buffer);
 
 	system ("make all");
 
-	sprintf (cmd_buffer, "mkdir  %s/pdf", path_buffer); 
+	sprintf (cmd_buffer, "mkdir -p %spdf", path_buffer); 
 	system (cmd_buffer);
 	
-	sprintf (cmd_buffer, "mv refman.pdf  %s/pdf/", path_buffer); 
+	sprintf (cmd_buffer, "mv refman.pdf  %spdf/", path_buffer); 
 	system(cmd_buffer);
 	
 	system("make clean");	
@@ -373,8 +373,9 @@ int main()
 	printf ("\nYour HTML Documentation is here:\n\033[31m%shtml/index.html\n\033[0m", 
 																	path_buffer);
 	/* RTF Documentation */
-	printf ("\nYour RTF Documentation is here:\n\033[31m%srtf/refman.rtf\n\n\033[0m", 
+	/* printf ("\nYour RTF Documentation is here:\n\033[31m%srtf/refman.rtf\n\n\033[0m", 
 																	path_buffer);
+     */																	
 	/* PDF Documentation */
 	printf ("\nYour PDF Documentation is here:\n\033[31m%spdf/refman.pdf\n\n\033[0m", 
 																	path_buffer);
